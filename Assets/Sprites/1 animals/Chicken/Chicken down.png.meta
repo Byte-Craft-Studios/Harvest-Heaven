@@ -143,12 +143,12 @@ TextureImporter:
       name: Chicken down_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 15
-        width: 13
-        height: 13
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Chicken down_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 15
-        width: 13
-        height: 13
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: Chicken down_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 15
-        width: 13
-        height: 12
+        x: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: Chicken down_3
       rect:
         serializedVersion: 2
-        x: 49
-        y: 15
-        width: 13
-        height: 12
+        x: 48
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: Chicken down_4
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 13
-        height: 12
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: Chicken down_5
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 0
-        width: 13
-        height: 12
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -275,12 +275,12 @@ TextureImporter:
       name: Chicken down_6
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
-        width: 13
-        height: 11
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -297,12 +297,12 @@ TextureImporter:
       name: Chicken down_7
       rect:
         serializedVersion: 2
-        x: 49
+        x: 48
         y: 0
-        width: 13
-        height: 12
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -319,12 +319,12 @@ TextureImporter:
       name: Chicken down_8
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 0
-        width: 13
-        height: 12
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -341,12 +341,12 @@ TextureImporter:
       name: Chicken down_9
       rect:
         serializedVersion: 2
-        x: 81
+        x: 80
         y: 0
-        width: 13
-        height: 11
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -363,7 +363,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 89a418f0f328dbd49bc2a3e930a0600f
     internalID: 0
     vertices: []
     indices: 
