@@ -5,7 +5,6 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
     public bool isInventoryOpen = false;
-    private string inventorySceneName = "Inventory";
 
     public delegate void InventoryToggled(bool state);
     public event InventoryToggled OnInventoryToggled;
@@ -15,12 +14,24 @@ public class InventoryManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Keeps this object across scenes
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Start()
+    {
+        SceneManager.LoadSceneAsync("Inventory", LoadSceneMode.Additive).completed += (op) =>
+        {
+            Scene inventoryScene = SceneManager.GetSceneByName("Inventory");
+            foreach (GameObject obj in inventoryScene.GetRootGameObjects())
+            {
+                obj.SetActive(false); // Keep everything inactive until needed
+            }
+        };
     }
 
     public void ToggleInventory()
@@ -40,7 +51,11 @@ public class InventoryManager : MonoBehaviour
         if (!isInventoryOpen)
         {
             isInventoryOpen = true;
-            SceneManager.LoadScene(inventorySceneName, LoadSceneMode.Additive); // Load inventory scene
+            Scene inventoryScene = SceneManager.GetSceneByName("Inventory");
+            foreach (GameObject obj in inventoryScene.GetRootGameObjects())
+            {
+                obj.SetActive(true); // Activate objects
+            }
             OnInventoryToggled?.Invoke(isInventoryOpen);
         }
     }
@@ -50,7 +65,11 @@ public class InventoryManager : MonoBehaviour
         if (isInventoryOpen)
         {
             isInventoryOpen = false;
-            SceneManager.UnloadSceneAsync(inventorySceneName); // Unload inventory scene
+            Scene inventoryScene = SceneManager.GetSceneByName("Inventory");
+            foreach (GameObject obj in inventoryScene.GetRootGameObjects())
+            {
+                obj.SetActive(false); // Deactivate objects instead of unloading the scene
+            }
             OnInventoryToggled?.Invoke(isInventoryOpen);
         }
     }
