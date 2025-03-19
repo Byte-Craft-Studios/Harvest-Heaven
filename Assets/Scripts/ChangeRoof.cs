@@ -3,13 +3,13 @@ using UnityEngine.Tilemaps;
 
 public class ToggleRoof : MonoBehaviour
 {
-    public Tilemap Grid; // Assign your "Roof" Tilemap in the Inspector
+    public GameObject Roof; // Assign your "Roof" Tilemap in the Inspector
 
     private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Player")) // Check if Player enters
             {
-                TilemapRenderer renderer = Grid.GetComponent<TilemapRenderer>();
+                TilemapRenderer renderer = Roof.GetComponent<TilemapRenderer>();
                 if (renderer != null)
                 {
                     renderer.enabled = false; // Hide the roof
@@ -21,7 +21,7 @@ public class ToggleRoof : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) // Check if Player exits
         {
-            TilemapRenderer renderer = Grid.GetComponent<TilemapRenderer>();
+            TilemapRenderer renderer = Roof.GetComponent<TilemapRenderer>();
             if (renderer != null)
             {
                 renderer.enabled = true; // Show the roof again
